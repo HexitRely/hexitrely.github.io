@@ -192,11 +192,12 @@ button {
             text-align: justify;
         }
 
-#Team {
+#team {
     text-align: center; /* Wycentrowanie tekstu */
 }
 
-#Team h2 {
+#team h2 {
     font-weight: bold; /* Pogrubienie tekstu */
     font-size: 40px; /* Ustawienie rozmiaru tekstu na 40px */
 }
+
