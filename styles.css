@@ -72,6 +72,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   text-align: center;
   color: white;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /* Div z linkami, plikami i krótkimi informacjami */
@@ -121,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   border-radius: 50%;
   margin-bottom: 10px;
+  
 }
 
 .team-member-box:hover {
@@ -182,3 +185,18 @@ button {
             bottom: 0;
             width: 100%;
         }
+		
+#historia {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: justify;
+        }
+
+#Team {
+    text-align: center; /* Wycentrowanie tekstu */
+}
+
+#Team h2 {
+    font-weight: bold; /* Pogrubienie tekstu */
+    font-size: 40px; /* Ustawienie rozmiaru tekstu na 40px */
+}
