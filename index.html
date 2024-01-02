@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Preferred+Font&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Heading+Font&display=swap">
+  <title>Hexit Rely</title>
+</head>
+<body>
+  <header>
+    <h1>Hexit Rely</h1>
+  </header>
+
+  <section>
+    <!-- Menu wyboru stron -->
+    <div id="menu">
+      <a href="#">Strona 1</a>
+      <a href="#">Strona 2</a>
+      <a href="#">Strona 3</a>
+    </div>
+
+    <!-- Główny kontener z trzema divami -->
+    <div id="main-container">
+      <!-- Pierwszy div z prostą informacją -->
+      <div class="content-box popup-trigger" data-title="Informacja 1" data-content="Lorem Ipsum" data-image="image1.webp">
+        <h3>Informacja 1</h3>
+      </div>
+
+      <!-- Drugi div z tytułem "Lorem Ipsum" -->
+      <div class="content-box popup-trigger" data-title="Lorem Ipsum" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-image="image2.webp">
+        <h3>Lorem Ipsum</h3>
+      </div>
+
+      <!-- Trzeci div z prostą informacją -->
+      <div class="content-box popup-trigger" data-title="Informacja 2" data-content="Lorem Ipsum" data-image="image3.webp">
+        <h3>Informacja 2</h3>
+      </div>
+    </div>
+
+    <!-- Dodatkowy div poza głównym kontenerem -->
+    <div id="additional-container">
+      <!-- Baner informacyjny -->
+      <div id="banner">
+        <p>Portfolio Muzyczne</p>
+      </div>
+
+      <!-- Div z linkami, plikami i krótkimi informacjami -->
+      <div id="links-files-info">
+        <p>Informacja | Plik | Informacja | Link</p>
+      </div>
+
+      <!-- Div z opisami osób z zespołu -->
+      <div id="team-members">
+        <!-- Okno 1 -->
+        <div class="team-member-box popup-trigger" data-title="Pracownik 1" data-content="Krótki opis Pracownika 1. Kliknij, aby zobaczyć więcej." data-image="path/to/pracownik1.webp">
+          <img src="pracownik1.webp" alt="Pracownik 1">
+          <h3>Pracownik 1</h3>
+          <div class="expandable-content">
+            <p>Długie opisy, dodatkowe informacje itp.</p>
+          </div>
+        </div>
+
+        <!-- Okno 2 -->
+        <div class="team-member-box popup-trigger" data-title="Pracownik 2" data-content="Krótki opis Pracownika 2. Kliknij, aby zobaczyć więcej." data-image="path/to/pracownik2.webp">
+          <img src="pracownik2.webp" alt="Pracownik 2">
+          <h3>Pracownik 2</h3>
+          <div class="expandable-content">
+            <p>Długie opisy, dodatkowe informacje itp.</p>
+          </div>
+        </div>
+
+        <!-- Dodaj kolejne okna w miarę potrzeb -->
+      </div>
+    </div>
+
+    <!-- Overlay i Popup -->
+    <div class="overlay">
+      <div class="popup">
+        <img src="" alt="Popup Image" id="popup-image">
+        <h3 id="popup-title">Tytuł</h3>
+        <p id="popup-content">Treść</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
