@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 100%;
   width: auto;
   height: auto;
+  border-radius: 50%;
   display: block;
   margin: 0 auto; /* Dodaje centrowanie obrazu */
 }
