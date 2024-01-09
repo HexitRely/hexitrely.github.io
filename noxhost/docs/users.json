@@ -8,7 +8,7 @@
     {
       "email": "user2@example.com",
       "password": "password2",
-      "content": "<h3>Welcome User 2!</h3><p>This is your personalized content.</p>"
+      "content": "<h3>Welcome User 2!</h3><p>This is your personalized content.</p><button onclick='buttonClick()'>Click me</button>"
     }
   ]
 }
