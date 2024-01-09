@@ -12,13 +12,34 @@ function login() {
         // Ukryj formularz logowania
         document.getElementById('loginForm').style.display = 'none';
 
+        // Pobierz ścieżkę do pliku HTML użytkownika
+        const contentFile = user.contentFile;
+
         // Wyświetl zawartość związaną z zalogowanym użytkownikiem
-        const contentDiv = document.getElementById('content');
-        contentDiv.style.display = 'block';
-        contentDiv.innerHTML = user.content;
+        loadUserContent(contentFile);
     } else {
         alert('Incorrect email or password. Please try again.');
     }
+}
+
+function loadUserContent(contentFile) {
+    // Sprawdź, czy plik HTML istnieje
+    fetch(`users/${contentFile}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('User content not found.');
+            }
+            return response.text();
+        })
+        .then(html => {
+            const contentDiv = document.getElementById('content');
+            contentDiv.style.display = 'block';
+            contentDiv.innerHTML = html;
+        })
+        .catch(error => {
+            console.error(error);
+            alert('Error loading user content.');
+        });
 }
 
 // Dodaj dane użytkowników
@@ -26,12 +47,12 @@ const users = [
     {
         "email": "user1@example.com",
         "password": "password1",
-        "content": "<h3>Welcome User 1!</h3><p>This is your personalized content.</p>"
+        "contentFile": "user1.html"
     },
     {
         "email": "user2@example.com",
         "password": "password2",
-        "content": "<h3>Welcome User 2!</h3><p>This is your personalized content.</p>"
+        "contentFile": "user2.html"
     }
     // Możesz dodać więcej użytkowników według tego samego wzoru
 ];
