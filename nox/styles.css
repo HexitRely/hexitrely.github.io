@@ -79,8 +79,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  
+  border-radius: 0; /* Dodana reguła, która usuwa zaokrąglenie */
 }
-
 .content-box:hover {
   transform: scale(1.05);
 }
@@ -206,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 .popup img {
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   margin-bottom: 10px;
 }
 
