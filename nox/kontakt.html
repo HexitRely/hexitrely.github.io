@@ -3,59 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nox/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Preferred+Font&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Heading+Font&display=swap">
   <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" type="image/png" sizes="32x32" href="nox/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="nox/favicon-16x16.png">
+  <link rel="manifest" href="nox/site.webmanifest">
+  <link rel="mask-icon" href="nox/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   
-  <title>Nox Audios</title>
+  <title>Hexit Rely</title>
 	<link rel=“shortcut icon” type=“image/png” href=”/favicon.png>
 </head>
 <body>
   <header>
-    <h1>NOX AUDIOS</h1>
+    <h1>Hexit Rely</h1>
   </header>
 
   <section>
     <!-- Menu wyboru stron -->
     <div id="menu">
+	<a href="hexitrely.github.io">HEXIT RELY</a>
       <a href="https://olafzawadzki107.gumroad.com/">Sklep</a>
-      <a href="nox-audios.html">Nox Audios</a>
-	  <a href="kontakt.html">Kontakt</a>
-	  <a href="portfolio.html">Portfolio</a>
+      <a href="nox/nox-audios.html">Nox Audios</a>
+      <a href="Contact-hexit.html">Kontakt</a>
+	  <a href="portfolio-hexit.html">Portfolio</a>
     </div>
-	<!--Content strony-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<footer>
-        <p>© 2024 Nox Audios</p>
-    </footer>
 
+
+	<div class="socialmedia">
+        <a href="https://www.youtube.com/channel/UCIpPTE3HsmUSAb-yfNybvSA" target="_blank" class="social-link">YouTube</a>
+        <a href="https://open.spotify.com/artist/4hcXADTFvPXtRxVTGYXW4I" target="_blank" class="social-link">Spotify</a>
+        <a href="https://www.instagram.com/hexit_official/" target="_blank" class="social-link">Instagram</a>
+		<a href="https://www.tiktok.com/@hexit_official" target="_blank" class="social-link">TikTok</a>
+		<a href="https://www.threads.net/@hexit_official" target="_blank" class="social-link">Threads</a>
+        <!-- Dodaj kolejne linki do social mediów według potrzeb -->
+    </div>
+	
+ <div class="kontakt-button">
+        <button onclick="openMailApp()">Wyślij Maila</button>
+    </div>
+	
+	    <div class="kontakt-info">
+        <p>Skontaktuj się ze mną:</p>
+        <ul>
+            <li><a href="https://discordapp.com/users/hexitrely" target="_blank">Discord</a></li>
+            <li><a href="https://www.instagram.com/hexit_official/" target="_blank">Instagram</a></li>
+            <li><a href="tel:+48537730422">+48 537 730 422</a></li>
+			<a>hexitcontact@gmail.com</a>
+        </ul>
+    </div>
+	
+	
+    <script>
+        function openMailApp() {
+            var emailAddress = "hexitcontact@gmail.com"; // Tutaj wpisz swój adres e-mail
+            var subject = "Kontakt z strony w sprawie "; // Opcjonalny temat wiadomości
+            var body = "Treść wiadomości"; // Opcjonalna treść wiadomości
+
+            var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
+                             "?subject=" + encodeURIComponent(subject) +
+                             "&body=" + encodeURIComponent(body);
+
+            window.open(mailtoLink, "_blank");
+        }
+    </script>
+	
+	
+	
+    
 <!--Cookies -->
  <div class="footer">
         Ta strona używa plików cookies. Dowiedz się więcej <a href="polityka-cookies.html" style="color: #fff;">tutaj</a>.
     </div>
 
-  
+<footer>
+        <p>© 2024 Olaf Zawadzki</p>
+    </footer>
+
+
+
+<!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106779291048050");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <!-- Overlay i Popup -->
+    <div class="overlay">
+      <div class="popup">
+        <img src="" alt="Popup Image" id="popup-image">
+        <h3 id="popup-title">Tytuł</h3>
+        <p id="popup-content">Treść</p>
+      </div>
+    </div>
   </section>
 
-  <script src="scripts.js"></script>
+  <script src="nox/scripts.js"></script>
 </body>
 </html>
