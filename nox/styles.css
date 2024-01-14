@@ -312,3 +312,118 @@ button {
   padding: 10px;
   text-align: center;
 }
+body.blog {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header.blog {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main.blog {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article.blog {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+h2.blog {
+    color: #333;
+}
+
+p.blog {
+    color: #555;
+}
+
+.socialmedia {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    color: #0066cc;
+}
+
+
+.about-music {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-music h2 {
+    color: #333;
+}
+
+.about-music p {
+    color: #555;
+}
+
+.kontakt-button,
+.kontakt-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+.kontakt-info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.kontakt-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kontakt-info li {
+    margin: 10px 0;
+}
+
+.kontakt-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.kontakt-info a:hover {
+    color: #0066cc;
+}
